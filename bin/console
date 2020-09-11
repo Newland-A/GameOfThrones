@@ -2,12 +2,15 @@
 
 require "bundler/setup"
 require "Game_of_Thrones"
-require 'pry'
-require 'open-uri'
-require 'rest-client'
-require 'nokogiri'
 
-require_relative '../lib/cli.rb'
+# require 'pry'
+require 'open-uri'
+# require 'json'
+# require 'rest-client'
+# require 'nokogiri'
+
+require_relative '../lib/cli'
+require_relative '../lib/api'
 
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
@@ -18,3 +21,5 @@ require_relative '../lib/cli.rb'
 
 # require "irb"
 # IRB.start(__FILE__)
+
+Api.new
